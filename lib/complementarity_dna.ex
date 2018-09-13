@@ -12,8 +12,7 @@ defmodule ComplementarityDna do
 
   def complementarity(strand) when is_binary(strand) do
     strand
-    |> split_letters
-    |> Enum.map(fn x -> String.upcase(x) end)
+    |> convert_letters
     |> Enum.map(fn
         "A" -> "T"
         "T" -> "A"
@@ -24,8 +23,9 @@ defmodule ComplementarityDna do
     |> List.to_string
   end
 
-  def split_letters(strand) do
+  def convert_letters(strand) do
     String.graphemes(strand)
+    |> Enum.map(fn x -> String.upcase(x) end)
    end
 
 end
