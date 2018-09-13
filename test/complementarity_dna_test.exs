@@ -9,9 +9,9 @@ defmodule ComplementarityDnaTest do
     end
 
     test "Test incorrect nucleotide" do
-      assert ComplementarityDna.complementarity("BBADCT") == RuntimeError
+      assert_raise RuntimeError, fn ->
+        ComplementarityDna.complementarity("BBADCT")
+      end
     end
-
   end
-
 end

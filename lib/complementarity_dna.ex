@@ -10,9 +10,8 @@ defmodule ComplementarityDna do
 
   """
 
-  def complementarity(strand) do
+  def complementarity(strand) when is_binary(strand) do
     strand
-    |> IO.inspect
     |> split_letters
     |> Enum.map(fn x -> String.upcase(x) end)
     |> Enum.map(fn
