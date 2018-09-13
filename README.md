@@ -2,8 +2,8 @@
 
 **Using:**
 ```elixir
-      iex> ComplementarityDna.complementarity("ACGTATC")
-      "TGCATAG"
+iex> ComplementarityDna.complementarity("ACGTATC")
+"TGCATAG"
 ```
 
 
