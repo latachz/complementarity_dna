@@ -1,6 +1,11 @@
 # ComplementarityDna
 
-**TODO: Add description**
+**Using:**
+```elixir
+      iex> ComplementarityDna.complementarity("ACGTATC")
+      "TGCATAG"
+```
+
 
 ## Installation
 
